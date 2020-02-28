@@ -12,7 +12,8 @@ if (temp>=-100 && temp<=212)
         var temp1 = ((temp-32)*5/9);
         alert("The temperature in C : " +temp1+ "\n the temperature in F is: " +temp);
     }
-else alert("You entered:" +temp+ "\n Please enter a value between -100 and 212"+"\n");
+else if( temp!=999)
+    alert("You entered:" +temp+ "\n Please enter a value between -100 and 212"+"\n");
 }while(temp!=999)
 
 
