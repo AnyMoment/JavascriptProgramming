@@ -1,0 +1,106 @@
+#calculator {
+  width: 35em;
+  height: 35em;
+  display: grid;
+    justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  background-color: skyblue;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    top: 20px;
+    position: relative;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+footer{
+    text-align: center;
+    padding-top: 50px;
+}
+#numbers, #operators {
+    height: 400px;
+}
+#result {
+    height: 120px;
+    text-align: right;
+}
+#historyValue{
+    text-align: right;
+	height: 50px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 17px;
+	background-color: black; /*white; #919191;*/
+    color: greenyellow;
+    margin-top: 0.3em;
+}
+#outputValue{
+    text-align: right;
+	height: 50px;
+	margin: 10px 20px;
+	font-size: 17px;
+    background-color:black;
+    color: greenyellow;
+}
+.num, .opr, .paranthesis, .func, .pi, .ce {
+    width: 4em;
+    height: 4em;
+    background-color: beige;
+}
+#clear {
+    width: 94px;
+    height: 45px;
+}
+#backspace {
+    width: 94px;
+    height: 45px;
+}
+.num, .opr, .paranthesis, .clear, .func, .pi, .paranthesis, .ce{
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #eaedef;
+}
+#equals, #decimal {
+    background-color: #eaedef;
+}
+.num:active , .opr:active, .paranthesis:active, .func:active, .pi:active, .ce:active {
+    font-size: 120%;
+}
+.num:hover , .opr:hover, .paranthesis:hover, .func:hover, .pi:hover, .ce:active {
+    background-color: grey;
+}
+#equals:hover, #decimal:hover {
+    background-color: #696000;
+}
+#equals:active, #decimal:active {
+    background-color: #696000;
+}
+
+
+#keypad{
+position: relative;
+width: 80%;
+margin-left: 5.5em;
+margin-top: 2em;
+}
+
+.opr{
+    background-color: coral;
+}
+
+.paranthesis{
+    background-color:lightpink;
+}
+
+.ce{
+    background-color: darksalmon;
+}
