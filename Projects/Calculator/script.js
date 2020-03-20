@@ -225,11 +225,35 @@ for(var i=0;i<number.length;i++){
        var output = reversedNum(getEntry());
         if(output!=isNaN){
             output = output+this.innerHTML;
-            //console.log(output)
+            console.log(output)
             printEntry(output);
         }
     });
 }
+
+var par=document.getElementsByClassName("paranthesis");
+for(var i=0;i<par.length;i++){
+par[i].addEventListener('click',function(){
+    if(this.id=="leftP"){
+        var pO=reversedNum(getEntry()).toString();
+        pO=pO+"(";
+        console.log(pO)
+        printEntry(pO);
+    } 
+    
+  else if(this.id=="RightP"){
+        pO=reversedNum(getEntry()).toString();
+        pO=pO+")";
+        console.log(pO)
+        printEntry(pO);
+        
+      
+    }
+});
+
+}
+
+
 document.getElementById('calculatorForm').addEventListener('submit', function(e) {
      e.preventDefault();
  }, false);
